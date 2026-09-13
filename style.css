@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #ffb6d5,
+        #ff8fbd,
+        #ff5fa2
+    );
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5a3045;
+}
+
+/* CONTENEDOR */
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    height: 650px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    padding: 25px;
+    background: #fff5fa;
+    border: 1px solid #f3b5cf;
+    border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(170, 70, 110, 0.25);
+}
+
+/* INFORMACIÓN (Textos centrados) */
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    /* Centra los elementos horizontalmente */
+    text-align: center;       /* Centra el texto */
+    padding: 40px;
+}
+
+.mini {
+    color: #c47b9c;
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+    color: #63384d;
+}
+
+.descripcion {
+    color: #9b637d;
+    font-size: 17px;
+    max-width: 400px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* REDES */
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.red {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 20px;
+    color: #63384d;
+    text-decoration: none;
+    background: #ffe3ef;
+    border: 1px solid #f4bfd5;
+    border-radius: 15px;
+    transition: 0.25s ease;
+    text-align: center;
+}
+
+.red:hover {
+    background: #ffd0e3;
+    transform: translateY(-3px); /* Ajustado para mejor visual con texto centrado */
+    border-color: #e99abb;
+    box-shadow: 0 5px 15px rgba(200, 90, 130, 0.15);
+}
+
+/* IMAGEN */
+.foto {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.foto:hover img {
+    transform: scale(1.03);
+}
+
+/* CELULAR */
+@media (max-width: 750px) {
+    body {
+        padding: 20px;
+    }
+
+    .contenedor {
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .info {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .foto {
+        height: 400px;
+    }
+}
