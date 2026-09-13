@@ -17,6 +17,7 @@ body {
     );
     font-family: Arial, Helvetica, sans-serif;
     color: #5a3045;
+    padding: 40px 20px;
 }
 
 .contenedor {
@@ -60,7 +61,21 @@ h1 {
     font-size: 17px;
     max-width: 400px;
     line-height: 1.6;
-    margin-bottom: 40px;
+    margin-bottom: 12px;
+}
+
+.descripcion-lista {
+    color: #9b637d;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    padding-left: 0;
+    list-style-position: inside;
+    text-align: center;
+}
+
+.descripcion-lista li {
+    margin-bottom: 6px;
 }
 
 .redes {
@@ -112,17 +127,18 @@ h1 {
 
 @media (max-width: 750px) {
     body {
-        padding: 20px;
+        padding: 30px 15px 50px 15px;
     }
 
     .contenedor {
         height: auto;
         grid-template-columns: 1fr;
-        padding: 15px;
+        padding: 20px;
+        margin-bottom: 20px;
     }
 
     .info {
-        padding: 30px 20px;
+        padding: 20px 10px;
     }
 
     h1 {
@@ -130,6 +146,6 @@ h1 {
     }
 
     .foto {
-        height: 400px;
+        height: 350px;
     }
 }
